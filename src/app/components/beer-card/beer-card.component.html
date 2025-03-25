@@ -1,0 +1,32 @@
+<div id="card">
+    <div id="inside">
+        <header>
+            <div class="left">
+                <div id="name">{{beer().name}}</div>
+            </div>
+            <div class="right">
+                <div class="quantity">{{beer().quanity}} CL</div>
+                <img class="icon pinte" src="img/pinte.png">
+            </div>
+        </header>
+        <figure id="art">
+            <img src="img/delirium.png"/>
+            <figcaption>{{beer().figureCaption}}</figcaption>
+        </figure>
+        <div id="capacites">
+            <div class="capacity">
+                <div class="main">
+                    <div class="cost">
+                        <img class="icon euro" src="img/euro.png"/>
+                        <img class="icon euro" src="img/euro.png"/>
+                    </div>
+                    <div class="name">{{beer().attackName}}</div>
+                    <div class="damage">{{beer().attackStrength}}</div>
+                </div>
+            </div>
+            <div class="desciption">
+                {{beer().attackDescription}}
+            </div>
+        </div>
+    </div>
+</div>
