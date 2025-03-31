@@ -1,9 +1,4 @@
-<app-search-bar (searchButtonClick)="increaseCount()"/>
-Click count: {{count}}
-
-
-
-<!-- <div id="card-list">
-    <app-beer-card />
-    <app-beer-card [beer]="beer1"/>
-</div> -->
+<button (click)="toggleBeer()">Toggle Beer</button>
+<div id="card-list">
+    <app-beer-card [beer]="selectedBeer()"/>
+</div>

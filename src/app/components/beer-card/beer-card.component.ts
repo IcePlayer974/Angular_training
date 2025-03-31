@@ -1,4 +1,5 @@
-import { Component, input, Input, InputSignal } from '@angular/core';
+import { BeerTypeProperties } from './../../utils/beer.utils';
+import { Component, computed, input, Input, InputSignal, OnChanges, SimpleChanges } from '@angular/core';
 import { Beer } from '../../models/beer.model';
 import { __values } from 'tslib';
 
@@ -10,6 +11,12 @@ import { __values } from 'tslib';
 })
 export class BeerCardComponent {
 
-beer: InputSignal<Beer> = input( new Beer()); 
+  beer = input(new Beer());
+  beerTypeIcon = computed(()=>{
+    return BeerTypeProperties[this.beer().type].imageUrl
+  });
+  backgroundColor = computed(()=>{
+    return BeerTypeProperties[this.beer().type].color
+  })
 
 }

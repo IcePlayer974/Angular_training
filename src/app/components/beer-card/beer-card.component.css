@@ -9,7 +9,7 @@
 
 #inside{
     padding: 5px;
-    background-color: rgba(110,158,213,255);
+    background-color: rgb(110,158,213);
 }
 
 header{
@@ -44,7 +44,7 @@ figure#art {
     margin: 0;
     padding: 5px 5px 0 5px;
     width: calc(100% - 10px);
-    background-color: grey;
+    background-color: rgba(233,236,239);
 
     img{
         width: 100%;

@@ -1,6 +1,10 @@
+import { BeerType } from "../utils/beer.utils";
+
 export class Beer {
     
     name: string = "My beer";
+    image: string = "img/delirium.png";
+    type: BeerType = BeerType.BLONDE;
     quanity: number = 50 ;
     figureCaption: string = "This Beer";
     

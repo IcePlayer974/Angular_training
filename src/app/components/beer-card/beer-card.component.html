@@ -1,16 +1,16 @@
 <div id="card">
-    <div id="inside">
+    <div id="inside" [style.background-color]="backgroundColor()">
         <header>
             <div class="left">
                 <div id="name">{{beer().name}}</div>
             </div>
             <div class="right">
                 <div class="quantity">{{beer().quanity}} CL</div>
-                <img class="icon pinte" src="img/pinte.png">
+                <img class="icon pinte" [src]="beerTypeIcon()">
             </div>
         </header>
         <figure id="art">
-            <img src="img/delirium.png"/>
+            <img [src]="beer().image"/>
             <figcaption>{{beer().figureCaption}}</figcaption>
         </figure>
         <div id="capacites">
