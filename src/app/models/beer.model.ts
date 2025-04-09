@@ -2,6 +2,7 @@ import { BeerType } from "../utils/beer.utils";
 
 export class Beer {
     
+    id: number = -1;
     name: string = "My beer";
     image: string = "img/delirium.png";
     type: BeerType = BeerType.BLONDE;
@@ -10,5 +11,10 @@ export class Beer {
     
     attackName: string = "Drunk Man";
     attackStrength: number = 60;
-    attackDescription: string = "Warning if you drink so mutch this attack make you 200 damage !!!"
+    attackDescription: string = "Warning if you drink so mutch this attack make you 200 damage !!! And you forgot ALL !!!"
+
+
+    copy():Beer {
+        return Object.assign(new Beer(), this);
+    }
 }

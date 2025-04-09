@@ -5,6 +5,8 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0 grey;
     background-color: rgb(221, 221, 221);
+
+
 }
 
 #inside{
@@ -27,6 +29,7 @@ header{
         flex-direction: row;
         justify-content: flex-end;
         gap: 10px;
+        
     }
 
     .right #quantity, .right img{

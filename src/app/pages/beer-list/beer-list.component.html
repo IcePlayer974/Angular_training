@@ -1,0 +1,12 @@
+<app-search-bar [(search)]="search"></app-search-bar>
+<div id="card-list">
+    @for (beer of filteredBeers(); track beer.name) {
+        <app-beer-card [beer]="beer"/>
+    }@empty {<div class="center">No beer found !</div>}
+</div>
+@if (filteredBeers().length > 0) {
+    <div class="center">Found {{filteredBeers().length}} beers !</div>
+}
+
+<!-- <div class="center"><button (click)="addBeer()">Add Generic Beer</button></div><br/> -->
+    
