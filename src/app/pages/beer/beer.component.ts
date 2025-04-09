@@ -29,7 +29,7 @@ export class BeerComponent implements OnInit, OnDestroy{
   });
   beerType = (Object.values(BeerType));
 
-
+//stop here cf 3.03.38 environ
 
 
   beerId = -1;
